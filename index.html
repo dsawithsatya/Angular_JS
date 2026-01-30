@@ -1,20 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>My Angular Demo Pages</title>
+  <title>Angular Practice Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: #ffffff;
+      width: 100%;
+      max-width: 900px;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 2.2rem;
+      color: #333;
+    }
+
+    .header p {
+      color: #666;
+      margin-top: 8px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: linear-gradient(135deg, #f5f7fa, #e2ebf0);
+      border-radius: 14px;
+      padding: 25px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .card span {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #888;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 500px) {
+      .header h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>All Demo Pages</h1>
-  <ul>
-    <li><a href="1way_bind.html">1 Way Bind</a></li>
-    <li><a href="2-waybind.html">2 Way Bind</a></li>
-    <li><a href="ng-1.html">Access data1</a></li>
-    <li><a href="ng-2.html">Access data2</a></li>
-    <li><a href="ng-3.html">ng-bind</a></li>
-    <li><a href="ng-4.html">Using this keyword</a></li>
-    <li><a href="ng-repeat_array.html">ng-repeat (array)</a></li>
-    <li><a href="ng-repeat_objects.html">ng-repeat (objects)</a></li>
-  </ul>
+
+  <div class="container">
+    <div class="header">
+      <h1>Angular Practice Pages</h1>
+      <p>One place for all Angular & JavaScript demos</p>
+    </div>
+
+    <div class="grid">
+      <a href="1way_bind.html" class="card">
+        <h3>1-Way Binding</h3>
+        <span>Basic Angular binding example</span>
+      </a>
+
+      <a href="2-waybind.html" class="card">
+        <h3>2-Way Binding</h3>
+        <span>ngModel demo</span>
+      </a>
+
+      <a href="ng-1.html" class="card">
+        <h3>Angular ng-1</h3>
+        <span>Core directive example</span>
+      </a>
+
+      <a href="ng-2.html" class="card">
+        <h3>Angular ng-2</h3>
+        <span>Directive demo</span>
+      </a>
+
+      <a href="ng-3.html" class="card">
+        <h3>Angular ng-3</h3>
+        <span>Expression example</span>
+      </a>
+
+      <a href="ng-4.html" class="card">
+        <h3>Angular ng-4</h3>
+        <span>Advanced binding</span>
+      </a>
+
+      <a href="ng-repeat_array.html" class="card">
+        <h3>ng-repeat (Array)</h3>
+        <span>List rendering</span>
+      </a>
+
+      <a href="ng-repeat_objects.html" class="card">
+        <h3>ng-repeat (Objects)</h3>
+        <span>Object iteration</span>
+      </a>
+    </div>
+
+    <footer>
+      © 2026 | Built by Satya | Angular Practice Repository
+    </footer>
+  </div>
+
 </body>
 </html>
