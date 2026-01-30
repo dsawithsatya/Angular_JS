@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js">
+            
+        </script>
+        <script type="text/javascript">
+            var x=angular.module("ang-1",[])
+            x.controller("sai",function($scope){
+                $scope.name='satya1'
+                
+                <!-- document.write("<br><br><br><h1>This is sai arudra</h1>") -->
+            })
+        </script>
+    
+    <title>Angular-JS from head</title>
+</head>
+<body ng-app="ang-1" ng-init="username='sai arudra'"  ng-controller="sai">
+    
+        
+        <h1 ng-bind="username"><p>This is {{username}}</p></h1>
+    
+
+    
+</body>
+</html>

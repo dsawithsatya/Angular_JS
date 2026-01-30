@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <title>Angular-JS in HTML</title>
+</head>
+<body>
+
+<div ng-app="app1" ng-controller="control">
+    <hr>
+    <h1>My name is {{name}}</h1>
+    <h1>My id is {{id}}</h1>
+    <h1>My college name is {{Clg}}</h1>
+    <hr>
+
+</div>
+<script>
+    var x1=angular.module("app1",[])
+    x1.controller("control",function($scope){
+        $scope.name="satya"
+        $scope.id=1076
+        $scope.Clg="Dr.MGR Educational And Research Institute"
+    })
+
+</script>
+
+    
+</body>
+<body>
+        <center>
+        <tt><h2>This is Angular-JS, i am going to use in tag level</h2></tt>
+    </center>
+    <div ng-app="" ng-init="username='satya'">
+  <hr>
+  <h1>My username is:{{username}}</h1>
+  <hr>
+</div>
+
+ <center>
+    <tt><h2>Then we can use to bind with the tag</h2></tt>
+</center>
+<div ng-app="ng-one" ng-init="username='satya'">
+    <hr>
+    <h1 ng-bind="username"></h1>
+    <hr>
+
+</div>
+    
+
+</body>
+</html>

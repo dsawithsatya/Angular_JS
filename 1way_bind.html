@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1way_bind</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+        var x1=angular.module("app",[])
+        x1.controller("s",function(){
+            this.name="satya"
+            this.id=1076
+        })
+        /*
+        we can use $scope also for declaring the variable no need to call with the controllers
+        var x1=angular.module("app",[])
+        x1.controller("s",function($scope){
+            $scope.name="satya"
+            $scope.id=1076
+        })
+            */
+    </script>
+</head>
+<body>
+    <div ng-app="app" ng-controller="s as k">
+        <center><tt><h1>This is one way bind data</h1></tt></center>
+        
+        <h1>my id is {{k.id}}</h1>
+        <h1>my name is {{k.name}}</h1>
+    </div>
+    
+</body>
+</html>

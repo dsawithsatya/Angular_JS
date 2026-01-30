@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AngularJS Example</title>
+    <!-- AngularJS library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+
+<div ng-app="app1" ng-controller="control">
+    <hr>
+    <h1>My name is {{name}}</h1>
+    <h1>My id is {{id}}</h1>
+    <h1>My college name is {{Clg}}</h1>
+    <hr>
+     <div ng-app="" ng-init="username='satya'">
+  <hr>
+  <h1>My username is:{{username}}</h1>
+  <hr>
+</div>
+
+</div>
+
+<script>
+    var x1 = angular.module("app1", []);
+    x1.controller("control", function ($scope) {
+        $scope.name = "satya"
+        $scope.id = 1076
+        $scope.Clg = "Dr.MGR Educational And Research Institute"
+    })
+</script>
+
+</body>
+</html>

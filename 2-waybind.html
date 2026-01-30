@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2_way bind data</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+        var x1=angular.module("app",[])
+        x1.controller("s",function($scope){
+            $scope.name="satya"
+            $scope.id=1076
+        })
+        
+
+    </script>
+</head>
+<body>
+    <div ng-app="app" ng-controller="s as k">
+        <center><tt><h1>This is two way bind data</h1></tt></center>
+        
+        <h1>my id is {{id}}</h1>
+        <h1>my name is {{name}}</h1>
+        Name : <input type="text" ng-model="name">
+        <hr>
+        Id : <input type="text" ng-model="id">
+    </div>
+    
+    
+</body>
+</html>

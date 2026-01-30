@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ng-repeat_array</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+        var x=angular.module("app",[])
+        x.controller("m1",function($scope){
+            $scope.employees=["satya","siva","kaja"]
+
+        })
+    </script>
+</head>
+<body>
+    <center><h1><tt>This is ng-repeat, it is used for looping the elements </tt></h1></center>
+    <div ng-app="app" ng-controller="m1">
+        <ul ng-repeat="e in employees ">
+            <li>Employee name is : {{e | uppercase}}</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

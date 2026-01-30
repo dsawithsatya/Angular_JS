@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ng-repeat</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+        var x2=angular.module("app",[])
+        x2.controller("a1",function($scope){
+         $scope.students=[{"name":"satya",id:1076,marks:89},
+         {name:"siva",id:1075,marks:82},
+         {name:"kaja",id:1110,marks:76}]
+        })
+    </script>
+</head>
+<body>
+    <div ng-app="app" ng-controller="a1">
+    <h1>ng-repeat can act as a for loop for Angular-JS, lets perform the operations for objects</h1>
+    <ul ng-repeat="i in students">
+        <li>{{i.name}}</li>
+        <li>{{i.id}}</li>
+        <li>{{i.marks}}</li>
+    </ul>
+    
+    </div>
+    
+</body>
+</html>
